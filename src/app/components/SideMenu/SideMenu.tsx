@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export const SideMenu = () => {
@@ -16,7 +17,7 @@ export const SideMenu = () => {
             <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
             <ul className="menu p-4 w-80 min-h-full bg-white text-black font-bold">
             {/* Sidebar content here */}
-            <li><a>Sidebar Item 1</a></li>
+            <li><Link href={"/login"}>Login</Link></li>
             <li><a>Sidebar Item 2</a></li>
             </ul>
         </div>
