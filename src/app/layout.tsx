@@ -18,9 +18,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Box>
-          <Navbar/>
-          {children}
-          <Footer/>
+        <Navbar/>
+        {children}
+        <Footer/>
         </Box>
       </body>
     </html>

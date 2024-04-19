@@ -31,3 +31,13 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: 'Corethan';
+  src: url('/fonts/corethan-regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CorethanBold';
+  src: url('/fonts/corethan-bold.otf') format('opentype');
+}
