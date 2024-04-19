@@ -13,7 +13,7 @@ export const Box = ({user}: Props) => {
     const [isActive, setIsActive] = useState(true);
 
     return (
-        <div>
+        <div className='flex'>
             {isActive ? (
                 <LoginForm user={user} isActive={isActive} setIsActive={setIsActive}/>
             ) : (

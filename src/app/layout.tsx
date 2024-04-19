@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "./components/Navbar/Navbar";
+import { Box } from "./components/Box/Box";
+import { Footer } from "./components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Todo-app",
@@ -15,8 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar/>
-        {children}
+        <Box>
+          <Navbar/>
+          {children}
+          <Footer/>
+        </Box>
       </body>
     </html>
   );

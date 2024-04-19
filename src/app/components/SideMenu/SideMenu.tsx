@@ -15,10 +15,19 @@ export const SideMenu = () => {
         </div> 
         <div className="drawer-side">
             <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-            <ul className="menu p-4 w-80 min-h-full bg-white text-black font-bold">
+            <ul className="menu p-4 w-80 min-h-full bg-[#E8C2CA] border-l-2 border-[#735D78] text-black font-bold">
             {/* Sidebar content here */}
             <li><Link href={"/login"}>Login</Link></li>
-            <li><a>Sidebar Item 2</a></li>
+            <li>                    
+              <form action="/auth/signout" method="post">
+                <button
+                  className="btn btn-success btn-outline text-white transition-all"
+                  type="submit"
+                >
+                  Log out
+                </button>
+              </form>
+            </li>
             </ul>
         </div>
     </div>
