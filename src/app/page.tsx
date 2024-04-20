@@ -36,10 +36,10 @@ export default function Home() {
               Our todo app is packed with powerful features to help you stay organized and productive.
             </h2>
           </div>
-          <div className="grid grid-cols-3 gap-10 m-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-10">
             {itemsforcards.map((item) => (
               <div key={item.id} className="p-4">
-                <div className="bg-[#735D78] p-6 h-[15vh] rounded-lg shadow-lg">
+                <div className="bg-[#735D78] p-6 h-[25vh] rounded-lg shadow-lg">
                   <h3 className="text-2xl font-bold text-[#F7D1CD]">{item.title}</h3>
                   <p className="text-[#B392AC] pt-2">{item.description}</p>
                 </div>

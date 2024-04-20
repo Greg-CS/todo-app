@@ -8,8 +8,8 @@ import { usePathname } from 'next/navigation'
 
 export const Navbar = () => {
   const router = usePathname();
-  console.log(router);
   const [isLoginPage, setIsLoginPage] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   useEffect(() => {
     if (router === '/login') {
       setIsLoginPage(true);

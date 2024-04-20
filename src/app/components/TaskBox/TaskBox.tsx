@@ -32,11 +32,11 @@ export const TaskBox = () => {
   }
 
   if (!tasks) {
-    return <div>No Current Tasks</div>;
+    return <div className='text-black'>No Current Tasks</div>;
   }
 
   return (
-    <div className='bg-white border-2 rounded-2xl p-10 text-black'>
+    <div className='bg-white border-2 rounded-2xl p-10 text-black mt-10'>
         {tasks.filter((task) => task.isComplete === false).map((task) => (
             <div key={task.id} className={`flex items-center justify-between ${task.isComplete === true ? "hidden" : ""}`}>
             <h1 className='text-4xl'>Title: {task.title}</h1>

@@ -5,20 +5,20 @@ export const Footer = () => {
     <div className='bg-[#B392AC] grid items-center text-[#F7D1CD]'>
         <div className='md:flex grid justify-around gap-5 items-center h-[40vh]'>
             <div className='grid gap-3 items-center'>
-                <label className='p-3 bg-[#F7D1CD] text-[#735D78] rounded-lg font-bold w-[6vw]'>
+                <label className='p-3 bg-[#F7D1CD] text-[#735D78] rounded-lg font-bold w-auto text-center md:text-left md:w-[6vw]'>
                     Contact us
                 </label>
                 <h1 className='text-6xl'>
                     Get in touch with us
                 </h1>
                 <div className='flex items-end justify-end'>
-                    <button className='btn w-[6vw] bg-[#735D78] border-0 text-[#F7D1CD]'>
+                    <button className='btn md:w-[6vw] bg-[#735D78] border-0 text-[#F7D1CD] w-auto text-center md:text-left '>
                         Contact Sales
                     </button>
                 </div>
             </div>
             <div className='grid gap-3 items-center'>
-                <label className='p-3 bg-[#F7D1CD] text-[#735D78] rounded-lg font-bold'>
+                <label className='p-3 bg-[#F7D1CD] text-[#735D78] rounded-lg font-bold w-auto text-center md:text-left md:w-[6vw]'>
                     Follow us
                 </label>
                 <div className='flex gap-3'>

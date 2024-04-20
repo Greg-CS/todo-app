@@ -11,9 +11,9 @@ export default async function AccountPage() {
     } = await supabase.auth.getUser();
 
     return (
-        <>
+        <div className="min-h-screen bg-[#F7D1CD] p-10">
             <CreateTaskBox user={user}/>
             <TaskBox />
-        </>
+        </div>
     );
     }
