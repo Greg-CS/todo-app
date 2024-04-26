@@ -2,10 +2,10 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div className='bg-[#B392AC] grid items-center text-[#F7D1CD]'>
+    <footer className='bg-[#B392AC] grid items-center text-[#F7D1CD] p-10'>
         <div className='md:flex grid justify-around gap-5 items-center h-[40vh]'>
             <div className='grid gap-3 items-center'>
-                <label className='p-3 bg-[#F7D1CD] text-[#735D78] rounded-lg font-bold w-auto text-center md:text-left md:w-[6vw]'>
+                <label className='p-3 bg-[#F7D1CD] text-[#735D78] rounded-lg font-bold badge text-center md:text-left border-0'>
                     Contact us
                 </label>
                 <h1 className='text-6xl'>
@@ -18,10 +18,10 @@ export const Footer = () => {
                 </div>
             </div>
             <div className='grid gap-3 items-center'>
-                <label className='p-3 bg-[#F7D1CD] text-[#735D78] rounded-lg font-bold w-auto text-center md:text-left md:w-[6vw]'>
+                <label className='p-3 bg-[#F7D1CD] text-[#735D78] rounded-lg font-bold badge text-center md:text-left border-0'>
                     Follow us
                 </label>
-                <div className='flex gap-3'>
+                <div className='flex items-center justify-center gap-3'>
                     <button className=''>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
@@ -40,11 +40,11 @@ export const Footer = () => {
                 </div>
             </div>
         </div>
-        <div className='border-t-2 border-[#F7D1CD] flex justify-between p-5 font-bold'>
+        <div className='md:border-t-2 border-[#F7D1CD] pt-24 md:pt-0 grid md:flex md:justify-between p-5 font-bold'>
             <p className='text-center'>
                 © 2021 Todo App. All rights reserved.
             </p>
-            <div className='flex gap-3'>
+            <div className='grid md:flex gap-3 text-center'>
                 <span>
                     Privacy Policy
                 </span>
@@ -53,6 +53,6 @@ export const Footer = () => {
                 </span>
             </div>
         </div>
-    </div>
+    </footer>
   )
 }

@@ -1,6 +1,6 @@
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
-import { Database } from "../../../types/supabase";
+import { Database } from "../../../types/database.types";
 import { Box } from "../components/Login-Signup-Box/Box";
 
 export default async function Page() {

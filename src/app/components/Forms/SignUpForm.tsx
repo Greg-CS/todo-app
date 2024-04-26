@@ -1,6 +1,6 @@
 "use client";
 
-import { Database } from "../../../../types/supabase";
+import { Database } from "../../../../types/database.types";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import React, { useState } from "react";
 import "react-toastify/dist/ReactToastify.css";

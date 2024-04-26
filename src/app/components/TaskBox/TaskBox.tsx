@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
-import { Database } from '../../../../types/supabase';
+import { Database } from '../../../../types/database.types';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -18,7 +18,6 @@ export const TaskBox = () => {
     const fetchTasks = async () => {
       const response = await axios.get("/api/GetTodos")
       setTasks(response.data);
-      console.log(response.data);
     };
     fetchTasks();
   }, []);
@@ -37,11 +36,12 @@ export const TaskBox = () => {
 
   return (
     <div className='bg-white border-2 rounded-2xl p-10 text-black mt-10'>
+      <h1 className='text-xl font-bold'>All Tasks</h1> 
         {tasks.filter((task) => task.isComplete === false).map((task) => (
             <div key={task.id} className={`flex items-center justify-between ${task.isComplete === true ? "hidden" : ""}`}>
             <h1 className='text-4xl'>Title: {task.title}</h1>
             <p className='text-4xl'>Description: {task.description}</p>
-            <input type="checkbox" onChange={() => Completed(task.id)} />
+            <input className="checkbox" type="checkbox" onChange={() => Completed(task.id)} />
             </div>
         ))}
         <ToastContainer />

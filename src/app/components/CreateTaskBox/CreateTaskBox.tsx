@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs"
-import { Database} from "../../../../types/supabase"
+import { Database} from "../../../../types/database.types"
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -33,13 +33,13 @@ export const CreateTaskBox = ({user}: {user: any}) => {
         </div>
         <div className="flex justify-between items-center gap-5 mt-5">
         <input
-            className="border-2 rounded-lg p-2 w-full"
+            className="border-2 rounded-lg p-2 w-full input-ghost input"
             type="text"
             placeholder="Add a task title"
             onChange={(e) => setTaskTitle(e.target.value)}
         />
         <input
-            className="border-2 rounded-lg p-2 w-full"
+            className="border-2 rounded-lg p-2 w-full input-ghost input"
             type="text"
             placeholder="Add a task description"
             onChange={(e) => setTaskDescription(e.target.value)}

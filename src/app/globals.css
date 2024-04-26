@@ -41,3 +41,11 @@ body {
   font-family: 'CorethanBold';
   src: url('/fonts/corethan-bold.otf') format('opentype');
 }
+
+.colors {
+  --first: #F7D1CD;
+  --second: #B392AC;
+  --third: #D1B3C4;
+  --fourth: #735D78;
+  --fifth: #E8C2CA;
+}
