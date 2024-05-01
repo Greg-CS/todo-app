@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <nav
+    class="navbar bg-gradient-to-t from-[#F7D1CD] via-[#F7D1CD] to-[#B392AC] text-black shadow-2xl h-[10vh]"
+  >
+    <div
+      class="navbar-start"
+    >
+      <a
+        class="btn rounded-2xl bg-[#B392AC] hover:bg-[#D1B3C4] border-0 text-xl text-[#735D78] font-bold"
+        href="/"
+      >
+        Todo App
+      </a>
+    </div>
+    <div
+      class="navbar-end gap-3"
+    >
+      <a
+        class="btn rounded-2xl bg-[#B392AC] hover:bg-[#D1B3C4] border-0 text-xl text-[#735D78] font-bold"
+        href="/login#login"
+      >
+        Login
+      </a>
+      <span
+        class="text-[#735D78] font-bold"
+      >
+        /
+      </span>
+      <a
+        class="btn rounded-2xl bg-[#B392AC] hover:bg-[#D1B3C4] border-0 text-xl text-[#735D78] font-bold"
+        href="/login#signup"
+      >
+        Sign Up
+      </a>
+    </div>
+  </nav>
+</div>
+`;
